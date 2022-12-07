@@ -22,7 +22,7 @@ import java.util.Properties;
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
 @ComponentScan(value = "java")
-public class AppConfig {
+public class JavaConfig {
 
     @Autowired
     private Environment env;
