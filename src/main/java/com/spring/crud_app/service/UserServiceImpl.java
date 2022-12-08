@@ -1,7 +1,7 @@
-package service;
+package com.spring.crud_app.service;
 
-import dao.UserDao;
-import models.User;
+import com.spring.crud_app.dao.UserDao;
+import com.spring.crud_app.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private UserDao userDao;
+    private final UserDao userDao;
     @Autowired
     public UserServiceImpl(UserDao userDao) {
         this.userDao = userDao;

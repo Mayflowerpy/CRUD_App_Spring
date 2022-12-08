@@ -1,4 +1,4 @@
-package config;
+package com.spring.crud_app.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -7,7 +7,8 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     // Метод, указывающий на класс конфигурации
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[]{JavaConfig.class};
+        return null;
+//        return new Class<?>[]{JavaConfig.class};
     }
 
 

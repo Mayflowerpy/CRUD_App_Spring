@@ -1,10 +1,10 @@
-package dao;
+package com.spring.crud_app.service;
 
-import models.User;
+import com.spring.crud_app.models.User;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserService {
     User getById(long id);
     void addUser(User newUser);
     void deleteUser(long id);
