@@ -7,6 +7,7 @@
     <h2> All Users</h2>
 </head>
 
+<body>
 <table border="1">
     <tr>
         <th>Id</th>
@@ -17,16 +18,18 @@
         <th>Action</th>
     </tr>
     <tr th:each = "user : ${usersList}">
-        <td><a th:href="@{/users/{userId}(userId=${user.getId()})}" th:utext="${user.id}">...</a></td>
-        <td><a th:href="@{/users/{userId}(userId=${user.getId()})}" th:utext="${user.name}">...</a></td>
+
+        <td><a th:href="@{/users/{id}(id=${user.getId()})}" th:utext="${user.id}">...</a></td>
+        <td><a th:href="@{/users/{id}(id=${user.getId()})}" th:utext="${user.name}">...</a></td>
         <td th:utext="${user.lastName}">
         <td th:utext="${user.age}">
         <td th:utext="${user.mail}">
         <td>
-            <input type ="button" value="Update"
-                   onclick="window.location.href = 'updateUser'"/>
-            <input type ="button" value="Delete"
-                   onclick="window.location.href = 'deleteUser'"/>
+
+            <form th:method="DElETE" th:action="@{/users/{id}(id=${user.getId()})}">
+                <input type="submit" value="Delete">
+            </form>
+
         </td>
     </tr>
 </table>

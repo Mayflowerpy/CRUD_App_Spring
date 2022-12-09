@@ -37,9 +37,9 @@
     </table>
     <br/><br/>
 
+    <a th:href="@{{id}/edit (id=${user.getId()})}">Edit User</a>
   </div>
 
-<input type ="button" value="List of all Users"
-       onclick="window.location.href = 'users'"/>
+  <a th:href="@{/users}">Back to Contact List</a>
 </body>
 </html>
