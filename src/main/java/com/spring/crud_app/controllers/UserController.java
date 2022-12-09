@@ -59,11 +59,11 @@ public class UserController {
 
     @GetMapping("/users/{id}/edit")
     public String updateUser(@PathVariable("id") Long id, Model model) {
-        model.addAttribute("person", userService.getById(id));
+        model.addAttribute("user", userService.getById(id));
         return "edit";
     }
 
-    @PatchMapping("/users{id}")
+    @PatchMapping("/users/{id}/edit")
     public String update(@ModelAttribute("user") User user,
                          @PathVariable("id") long id) {
          userService.updateUser(id, user);
