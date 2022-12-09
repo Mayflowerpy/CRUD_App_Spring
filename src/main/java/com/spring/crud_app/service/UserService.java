@@ -1,7 +1,6 @@
 package com.spring.crud_app.service;
 
 import com.spring.crud_app.models.User;
-
 import java.util.List;
 
 public interface UserService {
