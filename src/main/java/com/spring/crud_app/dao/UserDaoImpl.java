@@ -23,7 +23,12 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public User getById(long id) {
-        return null;
+        return entityManager
+                .createQuery("SELECT u FROM User u", User.class)
+                .getResultList()
+                .stream()
+                .filter(user -> user.getId() == id)
+                .findAny().orElse(null);
     }
 
     @Override
@@ -32,7 +37,7 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public void deleteUser(long id) {
+    public void deleteUser(User user) {
 
     }
 
@@ -45,7 +50,7 @@ public class UserDaoImpl implements UserDao{
     @Override
     public List<User> getUsersList() {
         TypedQuery<User> query = entityManager
-                .createQuery("SELECT u FROM User u ", User.class);
+                .createQuery("SELECT u FROM User u", User.class);
         return query.getResultList();
     }
 }
