@@ -16,8 +16,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
-//import org.springframework.orm.jpa.JpaVendorAdapter;
-//import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 
 @Configuration
 @PropertySource({"classpath:db.properties", "classpath:hibernate.properties"})
@@ -73,14 +71,4 @@ public class JavaConfig {
         properties.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
         return properties;
     }
-
-    //    @Bean
-//    public JpaVendorAdapter jpaVendorAdapter() {
-//        return new HibernateJpaVendorAdapter();
-//    }
-
-//    @Bean
-//    public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
-//        return new PersistenceExceptionTranslationPostProcessor();
-//    }
 }
