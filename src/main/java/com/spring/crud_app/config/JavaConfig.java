@@ -62,6 +62,9 @@ public class JavaConfig {
         properties.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
         properties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
         properties.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
+        properties.put("hibernate.connection.characterEncoding", "utf8");
+        properties.put("hibernate.connection.CharSet", "utf8");
+        properties.put("hibernate.connection.useUnicode", true);
         return properties;
     }
 }

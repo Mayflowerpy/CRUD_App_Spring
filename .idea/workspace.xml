@@ -12,14 +12,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eea820fc-b3eb-4e65-8bf7-9b8e1c41a502" name="Changes" comment="entity and update-method  fix, import">
+    <list default="true" id="eea820fc-b3eb-4e65-8bf7-9b8e1c41a502" name="Changes" comment="db url change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/config/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/config/AppInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/config/JavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/config/JavaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/crud_app/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,30 +64,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;B:/YandexDisk/Education/Programming/JAVA/IDEA/CRUD_App_Spring/src/main/webapp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;500defe5129246d7ef20ef49448e2164&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "B:/YandexDisk/Education/Programming/JAVA/IDEA/CRUD_App_Spring/src/main/webapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "database.data.views",
+    "spring.configuration.checksum": "500defe5129246d7ef20ef49448e2164",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="B:\YandexDisk\Education\Programming\JAVA\IDEA\CRUD_App_Spring\src\main" />
@@ -295,7 +293,10 @@
       <workItem from="1670660380663" duration="3197000" />
       <workItem from="1670668022563" duration="587000" />
       <workItem from="1670682567181" duration="942000" />
-      <workItem from="1670773318928" duration="1958000" />
+      <workItem from="1670773318928" duration="2115000" />
+      <workItem from="1670776138217" duration="694000" />
+      <workItem from="1670824954352" duration="3896000" />
+      <workItem from="1670828904763" duration="3031000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670430647866</created>
@@ -360,11 +361,43 @@
       <option name="project" value="LOCAL" />
       <updated>1670668040770</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="entity and update-method  fix, import">
+      <created>1670775951387</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670775951387</updated>
+    </task>
+    <task id="LOCAL-00011" summary="entity and update-method  fix, import">
+      <created>1670775991839</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670775991839</updated>
+    </task>
+    <task id="LOCAL-00012" summary="db url change">
+      <created>1670776075063</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670776075063</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
@@ -378,6 +411,7 @@
     <MESSAGE value="add methods edit, delete&#10;html edit left" />
     <MESSAGE value="add UTF-8 encoding, some fix" />
     <MESSAGE value="entity and update-method  fix, import" />
-    <option name="LAST_COMMIT_MESSAGE" value="entity and update-method  fix, import" />
+    <MESSAGE value="db url change" />
+    <option name="LAST_COMMIT_MESSAGE" value="db url change" />
   </component>
 </project>
